@@ -1,0 +1,116 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 839.0
+margin_top = 53.0
+margin_right = 963.0
+margin_bottom = 101.0
+text = "Click here!"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 842.0
+margin_top = 474.0
+margin_right = 966.0
+margin_bottom = 522.0
+text = "Click here!"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 845.0
+margin_top = 319.0
+margin_right = 969.0
+margin_bottom = 367.0
+text = "Click here!"
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 843.0
+margin_top = 185.0
+margin_right = 967.0
+margin_bottom = 233.0
+text = "Click here!"
+
+[node name="List1" type="Panel" parent="."]
+margin_left = 69.0
+margin_top = 29.0
+margin_right = 662.0
+margin_bottom = 122.0
+
+[node name="Label" type="Label" parent="List1"]
+visible = false
+margin_left = 18.0
+margin_top = 14.0
+margin_right = 573.0
+margin_bottom = 71.0
+text = "Say something I'm giving up on you. I'm sorry that I couldn't get to you."
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="List2" type="Panel" parent="."]
+margin_left = 379.0
+margin_top = 157.0
+margin_right = 660.0
+margin_bottom = 239.0
+
+[node name="Label" type="Label" parent="List2"]
+margin_left = 18.0
+margin_top = 14.0
+margin_right = 267.0
+margin_bottom = 71.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="List2-2" type="TextEdit" parent="."]
+margin_left = 75.0
+margin_top = 157.0
+margin_right = 321.0
+margin_bottom = 243.0
+text = "Write something here!"
+
+[node name="List3" type="Panel" parent="."]
+margin_left = 69.0
+margin_top = 303.0
+margin_right = 662.0
+margin_bottom = 396.0
+
+[node name="Label" type="Label" parent="List3"]
+visible = false
+margin_left = 18.0
+margin_top = 14.0
+margin_right = 573.0
+margin_bottom = 71.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="List4" type="Panel" parent="."]
+margin_left = 378.0
+margin_top = 457.0
+margin_right = 662.0
+margin_bottom = 559.0
+
+[node name="Label" type="Label" parent="List4"]
+margin_left = 18.0
+margin_top = 14.0
+margin_right = 268.0
+margin_bottom = 88.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="List2-3" type="TextEdit" parent="."]
+margin_left = 75.0
+margin_top = 457.0
+margin_right = 321.0
+margin_bottom = 543.0
+text = "Write a list here!"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
