@@ -1,0 +1,72 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 38.0
+margin_top = 67.0
+margin_right = 246.0
+margin_bottom = 141.0
+text = "Store"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 43.0
+margin_top = 265.0
+margin_right = 249.0
+margin_bottom = 341.0
+text = "Number +"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 31.0
+margin_top = 473.0
+margin_right = 245.0
+margin_bottom = 556.0
+text = "name or name + baldo"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 306.0
+margin_top = 47.0
+margin_right = 569.0
+margin_bottom = 167.0
+text = "Number here"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 315.0
+margin_top = 246.0
+margin_right = 915.0
+margin_bottom = 357.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 13.0
+margin_top = 10.0
+margin_right = 269.0
+margin_bottom = 100.0
+text = "Number:"
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 629.0
+margin_top = 47.0
+margin_right = 914.0
+margin_bottom = 166.0
+text = "Name here:"
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 603.0
+margin_top = 300.0
+margin_right = 903.0
+margin_bottom = 347.0
+text = "Name here:"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
